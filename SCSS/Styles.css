@@ -1,0 +1,550 @@
+/*Variables*/
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+:root {
+  --bg-navbar: $bg-navbar;
+  --text-colornavbar: $text-colornavbar;
+  --text-colornavbarHover: $text-colornavbarHover;
+  --text-Home: $text-Home;
+  --text-color: $text-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  color: black;
+}
+
+@media (max-width: 1920px) {
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    z-index: 100;
+  }
+  body .header #logo {
+    width: 10rem;
+    overflow: hidden;
+  }
+  body .header #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .header #menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header #menu-icon:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header #headernavbar {
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: flex;
+  }
+  body .header ul {
+    list-style-type: none;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+    gap: 1rem;
+  }
+  body .header ul li {
+    position: relative;
+  }
+  body .header ul li a {
+    color: white;
+    border-radius: 0 0 5% 5%;
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header ul li a i {
+    vertical-align: middle;
+  }
+  body .header ul li ul {
+    background-color: grey;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12rem;
+    transition: max-height 0.4s ease-in-out;
+  }
+}
+@media (max-width: 1440px) {
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    z-index: 100;
+  }
+  body .header #logo {
+    width: 10rem;
+    overflow: hidden;
+  }
+  body .header #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .header #menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header #menu-icon:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header #headernavbar {
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: flex;
+  }
+  body .header ul {
+    list-style-type: none;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+    gap: 1rem;
+  }
+  body .header ul li {
+    position: relative;
+  }
+  body .header ul li a {
+    color: white;
+    border-radius: 0 0 5% 5%;
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header ul li a i {
+    vertical-align: middle;
+  }
+  body .header ul li ul {
+    background-color: grey;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12rem;
+    transition: max-height 0.4s ease-in-out;
+  }
+}
+@media (max-width: 1367px) {
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    z-index: 100;
+  }
+  body .header #logo {
+    width: 10rem;
+    overflow: hidden;
+  }
+  body .header #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .header #menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header #menu-icon:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header #headernavbar {
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: flex;
+  }
+  body .header ul {
+    list-style-type: none;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+    gap: 1rem;
+  }
+  body .header ul li {
+    position: relative;
+  }
+  body .header ul li a {
+    color: white;
+    border-radius: 0 0 5% 5%;
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header ul li a i {
+    vertical-align: middle;
+  }
+  body .header ul li ul {
+    background-color: grey;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12rem;
+    transition: max-height 0.4s ease-in-out;
+  }
+}
+@media (max-width: 1280px) {
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    z-index: 100;
+  }
+  body .header #logo {
+    width: 10rem;
+    overflow: hidden;
+  }
+  body .header #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .header #menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header #menu-icon:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header #headernavbar {
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: flex;
+  }
+  body .header ul {
+    list-style-type: none;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+    gap: 1rem;
+  }
+  body .header ul li {
+    position: relative;
+  }
+  body .header ul li a {
+    color: white;
+    border-radius: 0 0 5% 5%;
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header ul li a i {
+    vertical-align: middle;
+  }
+  body .header ul li ul {
+    background-color: grey;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12rem;
+    transition: max-height 0.4s ease-in-out;
+  }
+}
+@media (max-width: 1025px) {
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    z-index: 100;
+  }
+  body .header #logo {
+    width: 7rem;
+    overflow: hidden;
+  }
+  body .header #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .header #menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header #menu-icon:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header #headernavbar {
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: flex;
+  }
+  body .header ul {
+    list-style-type: none;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+    gap: 1rem;
+  }
+  body .header ul li {
+    position: relative;
+  }
+  body .header ul li a {
+    color: white;
+    border-radius: 0 0 5% 5%;
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header ul li a i {
+    vertical-align: middle;
+  }
+  body .header ul li ul {
+    background-color: grey;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12rem;
+    transition: max-height 0.4s ease-in-out;
+  }
+}
+@media (max-width: 769px) {
+  body .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: black;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+    z-index: 100;
+  }
+  body .header #logo {
+    width: 7rem;
+    overflow: hidden;
+  }
+  body .header #logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  body .header #menu-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header #menu-icon:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header #headernavbar {
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: flex;
+  }
+  body .header ul {
+    list-style-type: none;
+    background-color: black;
+    border-radius: 0 0 5% 5%;
+    gap: 1rem;
+  }
+  body .header ul li {
+    position: relative;
+  }
+  body .header ul li a {
+    color: white;
+    border-radius: 0 0 5% 5%;
+    width: 100%;
+    padding: 0.8rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  body .header ul li a:hover {
+    background-color: white;
+    color: black;
+  }
+  body .header ul li a i {
+    vertical-align: middle;
+  }
+  body .header ul li ul {
+    background-color: grey;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 12rem;
+    transition: max-height 0.4s ease-in-out;
+  }
+  body .header #headernavbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  body .header #headernavbar #navbar #nav-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body .header #headernavbar #navbar #nav-container #navbar-nav,
+  body .header #headernavbar #navbar #nav-container #navbar-user {
+    display: block;
+    width: 100%;
+  }
+  body .header ul {
+    border-radius: 0;
+  }
+  body .header ul li a {
+    border-radius: 0;
+  }
+  body .header ul li ul {
+    position: static;
+    width: 100%;
+  }
+}/*# sourceMappingURL=Styles.css.map */

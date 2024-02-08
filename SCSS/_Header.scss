@@ -1,0 +1,162 @@
+@use "GeneralStyles" as Variables;
+
+@mixin Header($fontsize, $widthlogo, $navtoggle) {
+  body {
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 2rem;
+      background-color: Variables.$bg-navbar;
+      font-family: Variables.$font-style1;
+      font-size: $fontsize;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: Variables.$text-colornavbar;
+      gap: 1rem;
+      z-index: 100;
+
+      #logo {
+        width: $widthlogo;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+
+      #menu-icon {
+        font-size: 1.8rem;
+        cursor: pointer;
+        display: $navtoggle;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: white;
+          color: Variables.$text-color;
+        }
+      }
+
+      #headernavbar {
+        width: 100%;
+        #navbar {
+          #nav-container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            #navbar-nav,
+            #navbar-user {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        background-color: Variables.$bg-navbar;
+        border-radius: 0 0 5% 5%;
+        gap: 1rem;
+
+        li {
+          position: relative;
+          a {
+            color: Variables.$text-colornavbar;
+            border-radius: 0 0 5% 5%;
+            width: 100%;
+            padding: 0.8rem;
+            display: block;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              background-color: white;
+              color: Variables.$text-color;
+            }
+
+            i {
+              vertical-align: middle;
+            }
+          }
+
+          ul {
+            background-color: grey;
+            max-height: 0; 
+            overflow: hidden;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 12rem;
+            transition: max-height 0.4s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  @include Header(140%, 10rem, none);
+}
+
+@media (max-width: 1440px) {
+  @include Header(100%, 10rem, none);
+}
+
+@media (max-width: 1367px) {
+  @include Header(100%, 10rem, none);
+}
+
+@media (max-width: 1280px) {
+  @include Header(100%, 10rem, none);
+}
+
+@media (max-width: 1025px) {
+  @include Header(70%, 7rem, none);
+}
+
+@media (max-width: 769px) {
+  @include Header(70%, 7rem, block);
+
+  body {
+    .header {
+      #headernavbar {
+       position: absolute;
+       top: 100%;
+       left: 0;
+       width: 100%;
+
+       #navbar {
+        #nav-container {
+          flex-direction: column;
+          justify-content: flex-start;
+
+          #navbar-nav,
+            #navbar-user {
+              display: block;
+              width: 100%;
+            }
+        }
+      }
+      }
+
+      ul {
+      border-radius: 0;
+      li{
+        a{
+          border-radius: 0;
+        }
+
+        ul{
+          position: static;
+          width: 100%;
+        }
+      }
+      }
+
+      
+    }
+  }
+}

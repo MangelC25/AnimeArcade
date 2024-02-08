@@ -1,0 +1,38 @@
+/*Variables*/
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+
+$bg-navbar: black;
+$text-colornavbar: white;
+$text-colornavbarHover: black;
+$text-Home: white;
+$text-color: black;
+$font-style1: 'Protest Guerrilla', sans-serif;
+
+:root {
+  --bg-navbar: $bg-navbar;
+  --text-colornavbar: $text-colornavbar;
+  --text-colornavbarHover: $text-colornavbarHover;
+  --text-Home: $text-Home;
+  --text-color: $text-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section {
+  color: $text-color;
+}
+
+
+
