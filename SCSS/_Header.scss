@@ -71,25 +71,37 @@
             padding: 0.8rem;
             display: block;
             transition: all 0.2s ease-in-out;
-            &:hover {
-              background-color: white;
-              color: Variables.$text-color;
-            }
 
             i {
               vertical-align: middle;
             }
           }
 
+          &.active {
+            transition: all 0.2s ease-in-out;
+            background-color: white;
+            > a {
+              color: Variables.$text-color;
+            }
+          }
+
           ul {
             background-color: grey;
-            max-height: 0; 
+            max-height: 0;
             overflow: hidden;
             position: absolute;
             top: 100%;
             left: 0;
             width: 12rem;
             transition: max-height 0.4s ease-in-out;
+
+            li{
+              &.active, :hover {
+                transition: all 0.2s ease-in-out;
+                background-color: white;
+                color: Variables.$text-color;
+              } 
+            }
           }
         }
       }
@@ -123,40 +135,38 @@
   body {
     .header {
       #headernavbar {
-       position: absolute;
-       top: 100%;
-       left: 0;
-       width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
 
-       #navbar {
-        #nav-container {
-          flex-direction: column;
-          justify-content: flex-start;
+        #navbar {
+          #nav-container {
+            flex-direction: column;
+            justify-content: flex-start;
 
-          #navbar-nav,
+            #navbar-nav,
             #navbar-user {
               display: block;
               width: 100%;
             }
+          }
         }
-      }
       }
 
       ul {
-      border-radius: 0;
-      li{
-        a{
-          border-radius: 0;
-        }
+        border-radius: 0;
+        li {
+          a {
+            border-radius: 0;
+          }
 
-        ul{
-          position: static;
-          width: 100%;
+          ul {
+            position: static;
+            width: 100%;
+          }
         }
       }
-      }
-
-      
     }
   }
 }

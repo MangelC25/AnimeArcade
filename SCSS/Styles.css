@@ -90,12 +90,15 @@ section {
     display: block;
     transition: all 0.2s ease-in-out;
   }
-  body .header ul li a:hover {
-    background-color: white;
-    color: black;
-  }
   body .header ul li a i {
     vertical-align: middle;
+  }
+  body .header ul li.active {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+  }
+  body .header ul li.active > a {
+    color: black;
   }
   body .header ul li ul {
     background-color: grey;
@@ -106,6 +109,11 @@ section {
     left: 0;
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
+  }
+  body .header ul li ul li.active, body .header ul li ul li :hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
 @media (max-width: 1440px) {
@@ -173,12 +181,15 @@ section {
     display: block;
     transition: all 0.2s ease-in-out;
   }
-  body .header ul li a:hover {
-    background-color: white;
-    color: black;
-  }
   body .header ul li a i {
     vertical-align: middle;
+  }
+  body .header ul li.active {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+  }
+  body .header ul li.active > a {
+    color: black;
   }
   body .header ul li ul {
     background-color: grey;
@@ -189,6 +200,11 @@ section {
     left: 0;
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
+  }
+  body .header ul li ul li.active, body .header ul li ul li :hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
 @media (max-width: 1367px) {
@@ -256,12 +272,15 @@ section {
     display: block;
     transition: all 0.2s ease-in-out;
   }
-  body .header ul li a:hover {
-    background-color: white;
-    color: black;
-  }
   body .header ul li a i {
     vertical-align: middle;
+  }
+  body .header ul li.active {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+  }
+  body .header ul li.active > a {
+    color: black;
   }
   body .header ul li ul {
     background-color: grey;
@@ -272,6 +291,11 @@ section {
     left: 0;
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
+  }
+  body .header ul li ul li.active, body .header ul li ul li :hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
 @media (max-width: 1280px) {
@@ -339,12 +363,15 @@ section {
     display: block;
     transition: all 0.2s ease-in-out;
   }
-  body .header ul li a:hover {
-    background-color: white;
-    color: black;
-  }
   body .header ul li a i {
     vertical-align: middle;
+  }
+  body .header ul li.active {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+  }
+  body .header ul li.active > a {
+    color: black;
   }
   body .header ul li ul {
     background-color: grey;
@@ -355,6 +382,11 @@ section {
     left: 0;
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
+  }
+  body .header ul li ul li.active, body .header ul li ul li :hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
 @media (max-width: 1025px) {
@@ -422,12 +454,15 @@ section {
     display: block;
     transition: all 0.2s ease-in-out;
   }
-  body .header ul li a:hover {
-    background-color: white;
-    color: black;
-  }
   body .header ul li a i {
     vertical-align: middle;
+  }
+  body .header ul li.active {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+  }
+  body .header ul li.active > a {
+    color: black;
   }
   body .header ul li ul {
     background-color: grey;
@@ -438,6 +473,11 @@ section {
     left: 0;
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
+  }
+  body .header ul li ul li.active, body .header ul li ul li :hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
   }
 }
 @media (max-width: 769px) {
@@ -505,12 +545,15 @@ section {
     display: block;
     transition: all 0.2s ease-in-out;
   }
-  body .header ul li a:hover {
-    background-color: white;
-    color: black;
-  }
   body .header ul li a i {
     vertical-align: middle;
+  }
+  body .header ul li.active {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+  }
+  body .header ul li.active > a {
+    color: black;
   }
   body .header ul li ul {
     background-color: grey;
@@ -521,6 +564,11 @@ section {
     left: 0;
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
+  }
+  body .header ul li ul li.active, body .header ul li ul li :hover {
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    color: black;
   }
   body .header #headernavbar {
     position: absolute;
