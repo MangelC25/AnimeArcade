@@ -3,15 +3,21 @@ function NavResposive() {
 
   NavToggle.addEventListener("click", () => {
     const nav = document.querySelector("#headernavbar");
-    NavToggle.classList.add("active");
+    NavToggle.classList.toggle("active");
+    
 
-    if (nav.style.maxHeight) {
-        NavToggle.classList.remove("active");
-        nav.style.maxHeight = null; // Colapsa el menú
-      } else {
-        nav.style.display = "block"; // Muestra el menú
-        nav.style.maxHeight = nav.scrollHeight + "px"; // Despliega el menú
-      }
+    if (nav.style.maxHeight === "0px" || !nav.style.maxHeight) {
+      nav.style.display = "block";
+      setTimeout(() => {
+        nav.style.maxHeight = "500px";
+      }, 50); // Establecer el max-height basado en la altura total del contenido
+    } else {
+
+      setTimeout(() => {
+        nav.style.maxHeight = null;
+      }, 50);
+      
+    }
 
     console.log("Soy un menu responsive");
   });

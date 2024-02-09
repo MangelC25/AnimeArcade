@@ -148,8 +148,8 @@
         left: 0;
         width: 100%;
         max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
+        overflow-y: hidden;
+        transition: max-height 0.7s ease-in-out;
 
         #navbar {
           #nav-container {
