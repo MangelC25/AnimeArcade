@@ -43,6 +43,9 @@ section {
     z-index: 100;
   }
   body .header #logo {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     width: 10rem;
     overflow: hidden;
   }
@@ -58,7 +61,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
+    color: black;
+  }
+  body .header #menu-icon.active {
+    background-color: rgb(211, 211, 211);
     color: black;
   }
   body .header #headernavbar {
@@ -95,7 +102,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
     color: black;
@@ -134,6 +141,9 @@ section {
     z-index: 100;
   }
   body .header #logo {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     width: 10rem;
     overflow: hidden;
   }
@@ -149,7 +159,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
+    color: black;
+  }
+  body .header #menu-icon.active {
+    background-color: rgb(211, 211, 211);
     color: black;
   }
   body .header #headernavbar {
@@ -186,7 +200,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
     color: black;
@@ -225,6 +239,9 @@ section {
     z-index: 100;
   }
   body .header #logo {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     width: 10rem;
     overflow: hidden;
   }
@@ -240,7 +257,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
+    color: black;
+  }
+  body .header #menu-icon.active {
+    background-color: rgb(211, 211, 211);
     color: black;
   }
   body .header #headernavbar {
@@ -277,7 +298,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
     color: black;
@@ -316,6 +337,9 @@ section {
     z-index: 100;
   }
   body .header #logo {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     width: 10rem;
     overflow: hidden;
   }
@@ -331,7 +355,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
+    color: black;
+  }
+  body .header #menu-icon.active {
+    background-color: rgb(211, 211, 211);
     color: black;
   }
   body .header #headernavbar {
@@ -368,7 +396,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
     color: black;
@@ -407,6 +435,9 @@ section {
     z-index: 100;
   }
   body .header #logo {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     width: 7rem;
     overflow: hidden;
   }
@@ -422,7 +453,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
+    color: black;
+  }
+  body .header #menu-icon.active {
+    background-color: rgb(211, 211, 211);
     color: black;
   }
   body .header #headernavbar {
@@ -459,7 +494,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
     color: black;
@@ -498,6 +533,9 @@ section {
     z-index: 100;
   }
   body .header #logo {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     width: 7rem;
     overflow: hidden;
   }
@@ -513,7 +551,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
+    color: black;
+  }
+  body .header #menu-icon.active {
+    background-color: rgb(211, 211, 211);
     color: black;
   }
   body .header #headernavbar {
@@ -550,7 +592,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
-    background-color: white;
+    background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
     color: black;
@@ -571,10 +613,14 @@ section {
     color: black;
   }
   body .header #headernavbar {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
   body .header #headernavbar #navbar #nav-container {
     flex-direction: column;

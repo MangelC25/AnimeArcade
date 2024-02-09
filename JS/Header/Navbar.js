@@ -9,7 +9,7 @@ function setupMenu() {
         if (submenu.style.maxHeight === "0px" || !submenu.style.maxHeight) {
           submenu.style.maxHeight = submenu.scrollHeight + "px";
         } else {
-          return;
+          submenu.style.maxHeight = 0;
         }
       }
 
