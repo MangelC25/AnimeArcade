@@ -1,5 +1,6 @@
 /*Variables*/
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 :root {
   --bg-navbar: $bg-navbar;
   --text-colornavbar: $text-colornavbar;
@@ -102,6 +103,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
+    border-radius: 5%;
     background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
@@ -200,6 +202,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
+    border-radius: 5%;
     background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
@@ -298,6 +301,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
+    border-radius: 5%;
     background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
@@ -396,6 +400,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
+    border-radius: 5%;
     background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
@@ -494,6 +499,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
+    border-radius: 5%;
     background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
@@ -592,6 +598,7 @@ section {
   }
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
+    border-radius: 5%;
     background-color: rgb(207, 207, 207);
   }
   body .header ul li.active > a {
@@ -640,5 +647,111 @@ section {
   body .header ul li ul {
     position: static;
     width: 100%;
+  }
+}
+body #Home {
+  color: white;
+  margin-top: 5.5rem;
+  padding: 0 8%;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 35.6rem;
+  overflow: hidden;
+}
+body #Home #fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.5);
+  z-index: -1;
+  animation: slideBackground 8s infinite alternate;
+}
+body #Home #HomeContain {
+  padding: 1rem;
+  width: 38rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  position: relative;
+}
+body #Home #HomeContain #Text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #Home #HomeContain #Text #info {
+  font-family: "Poppins", sans-serif;
+  padding: 0 2rem;
+}
+body #Home #HomeContain #Text #info p {
+  padding-bottom: 2rem;
+}
+body #Home #HomeContain #Text #info #Suscribe {
+  background-color: rgb(209, 209, 205);
+  border-radius: 1rem;
+  display: flex;
+  width: 27rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 1rem;
+}
+body #Home #HomeContain #Text #info #Suscribe #S {
+  background-color: rgb(53, 53, 53);
+  padding: 0.8rem 0.8rem;
+  border-radius: 1rem;
+  margin-left: -1rem;
+}
+body #Home #HomeContain #Text #info #Suscribe input,
+body #Home #HomeContain #Text #info #Suscribe button {
+  border: none;
+  display: flex;
+  background-color: transparent;
+}
+body #Home #HomeContain #Text #info #Suscribe input i,
+body #Home #HomeContain #Text #info #Suscribe button i {
+  vertical-align: middle;
+  font-size: 1.1rem;
+}
+body #Home #HomeContain #Text #info #Suscribe input {
+  width: 100%;
+  outline: none;
+}
+body #Home #HomeContain #Text #info #Suscribe button {
+  cursor: pointer;
+}
+body #Home #images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body #Home #images #ImgAnime {
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  transform: skew(-20deg);
+  overflow: hidden;
+}
+body #Home #images #ImgAnime img {
+  width: auto;
+  height: 100%;
+  display: none;
+}
+
+@keyframes slideBackground {
+  0% {
+    transform: translateX(-6%) scale(1.2);
+  }
+  100% {
+    transform: translateX(6%) scale(1.2);
   }
 }/*# sourceMappingURL=Styles.css.map */
