@@ -62,11 +62,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #menu-icon.active {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #headernavbar {
@@ -104,13 +104,13 @@ section {
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
     border-radius: 5%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
   }
   body .header ul li.active > a {
     color: black;
   }
   body .header ul li ul {
-    background-color: grey;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -119,10 +119,14 @@ section {
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
   }
-  body .header ul li ul li.active, body .header ul li ul li :hover {
+  body .header ul li ul li.active,
+  body .header ul li ul li :hover {
     transition: all 0.2s ease-in-out;
     background-color: white;
     color: black;
+  }
+  body .header ul li > ul {
+    width: 16rem;
   }
 }
 @media (max-width: 1440px) {
@@ -161,11 +165,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #menu-icon.active {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #headernavbar {
@@ -203,13 +207,13 @@ section {
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
     border-radius: 5%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
   }
   body .header ul li.active > a {
     color: black;
   }
   body .header ul li ul {
-    background-color: grey;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -218,7 +222,8 @@ section {
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
   }
-  body .header ul li ul li.active, body .header ul li ul li :hover {
+  body .header ul li ul li.active,
+  body .header ul li ul li :hover {
     transition: all 0.2s ease-in-out;
     background-color: white;
     color: black;
@@ -260,11 +265,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #menu-icon.active {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #headernavbar {
@@ -302,13 +307,13 @@ section {
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
     border-radius: 5%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
   }
   body .header ul li.active > a {
     color: black;
   }
   body .header ul li ul {
-    background-color: grey;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -317,7 +322,8 @@ section {
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
   }
-  body .header ul li ul li.active, body .header ul li ul li :hover {
+  body .header ul li ul li.active,
+  body .header ul li ul li :hover {
     transition: all 0.2s ease-in-out;
     background-color: white;
     color: black;
@@ -359,11 +365,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #menu-icon.active {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #headernavbar {
@@ -401,13 +407,13 @@ section {
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
     border-radius: 5%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
   }
   body .header ul li.active > a {
     color: black;
   }
   body .header ul li ul {
-    background-color: grey;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -416,7 +422,8 @@ section {
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
   }
-  body .header ul li ul li.active, body .header ul li ul li :hover {
+  body .header ul li ul li.active,
+  body .header ul li ul li :hover {
     transition: all 0.2s ease-in-out;
     background-color: white;
     color: black;
@@ -458,11 +465,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #menu-icon.active {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #headernavbar {
@@ -500,13 +507,13 @@ section {
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
     border-radius: 5%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
   }
   body .header ul li.active > a {
     color: black;
   }
   body .header ul li ul {
-    background-color: grey;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -515,7 +522,8 @@ section {
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
   }
-  body .header ul li ul li.active, body .header ul li ul li :hover {
+  body .header ul li ul li.active,
+  body .header ul li ul li :hover {
     transition: all 0.2s ease-in-out;
     background-color: white;
     color: black;
@@ -557,11 +565,11 @@ section {
     transition: all 0.2s ease-in-out;
   }
   body .header #menu-icon:hover {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #menu-icon.active {
-    background-color: rgb(211, 211, 211);
+    background-color: white;
     color: black;
   }
   body .header #headernavbar {
@@ -599,13 +607,13 @@ section {
   body .header ul li.active {
     transition: all 0.2s ease-in-out;
     border-radius: 5%;
-    background-color: rgb(207, 207, 207);
+    background-color: white;
   }
   body .header ul li.active > a {
     color: black;
   }
   body .header ul li ul {
-    background-color: grey;
+    background-color: black;
     max-height: 0;
     overflow: hidden;
     position: absolute;
@@ -614,7 +622,8 @@ section {
     width: 12rem;
     transition: max-height 0.4s ease-in-out;
   }
-  body .header ul li ul li.active, body .header ul li ul li :hover {
+  body .header ul li ul li.active,
+  body .header ul li ul li :hover {
     transition: all 0.2s ease-in-out;
     background-color: white;
     color: black;
@@ -649,109 +658,1014 @@ section {
     width: 100%;
   }
 }
-body #Home {
-  color: white;
-  margin-top: 5.5rem;
-  padding: 0 8%;
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 35.6rem;
-  overflow: hidden;
-}
-body #Home #fondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: brightness(0.5);
-  z-index: -1;
-  animation: slideBackground 8s infinite alternate;
-}
-body #Home #HomeContain {
-  padding: 1rem;
-  width: 38rem;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  position: relative;
-}
-body #Home #HomeContain #Text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body #Home #HomeContain #Text #info {
-  font-family: "Poppins", sans-serif;
-  padding: 0 2rem;
-}
-body #Home #HomeContain #Text #info p {
-  padding-bottom: 2rem;
-}
-body #Home #HomeContain #Text #info #Suscribe {
-  background-color: rgb(209, 209, 205);
-  border-radius: 1rem;
-  display: flex;
-  width: 27rem;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.6rem 1rem;
-}
-body #Home #HomeContain #Text #info #Suscribe #S {
-  background-color: rgb(53, 53, 53);
-  padding: 0.8rem 0.8rem;
-  border-radius: 1rem;
-  margin-left: -1rem;
-}
-body #Home #HomeContain #Text #info #Suscribe input,
-body #Home #HomeContain #Text #info #Suscribe button {
-  border: none;
-  display: flex;
-  background-color: transparent;
-}
-body #Home #HomeContain #Text #info #Suscribe input i,
-body #Home #HomeContain #Text #info #Suscribe button i {
-  vertical-align: middle;
-  font-size: 1.1rem;
-}
-body #Home #HomeContain #Text #info #Suscribe input {
-  width: 100%;
-  outline: none;
-}
-body #Home #HomeContain #Text #info #Suscribe button {
-  cursor: pointer;
-}
-body #Home #images {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-body #Home #images #ImgAnime {
-  width: 90%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 10%;
-  display: flex;
-  justify-content: center;
-  transform: skew(-20deg);
-  overflow: hidden;
-}
-body #Home #images #ImgAnime img {
-  width: auto;
-  height: 100%;
-  display: none;
-}
-
-@keyframes slideBackground {
-  0% {
-    transform: translateX(-6%) scale(1.2);
+@media (max-width: 1920px) {
+  body #Home {
+    color: white;
+    margin-top: 5.5rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 46.6rem;
+    overflow: hidden;
   }
-  100% {
-    transform: translateX(6%) scale(1.2);
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 80rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 700px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 140%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 35rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+  body #Home #images #ImgAnime {
+    width: 80%;
+    left: 20%;
+  }
+}
+@media (max-width: 1440px) {
+  body #Home {
+    color: white;
+    margin-top: 5.5rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35.6rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 38rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 500px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 27rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+}
+@media (max-width: 1367px) {
+  body #Home {
+    color: white;
+    margin-top: 5.5rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35.6rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 38rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 500px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 27rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+}
+@media (max-width: 1280px) {
+  body #Home {
+    color: white;
+    margin-top: 5.5rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35.6rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 38rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 500px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 27rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+}
+@media (max-width: 1025px) {
+  body #Home {
+    color: white;
+    margin-top: 3.8rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 25rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 380px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 75%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 22rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+}
+@media (max-width: 769px) {
+  body #Home {
+    color: white;
+    margin-top: 3.8rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 27rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 20rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 300px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 75%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 18rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+  body #Home {
+    padding: 0 2%;
+  }
+}
+@media (max-width: 425px) {
+  body #Home {
+    color: white;
+    margin-top: 4.3rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 26rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: 20rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 340px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 75%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 18rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+  body #Home p {
+    text-align: center;
+  }
+  body #Home #fondo {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+  }
+  body #images {
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-38%) scale(1.2);
+    }
+    100% {
+      transform: translateX(8%) scale(1.2);
+    }
+  }
+}
+@media (max-width: 320px) {
+  body #Home {
+    color: white;
+    margin-top: 4.3rem;
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 24rem;
+    overflow: hidden;
+  }
+  body #Home #fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: brightness(0.4);
+    z-index: -1;
+    animation: slideBackground 8s infinite alternate;
+  }
+  body #Home #HomeContain {
+    padding: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    position: relative;
+  }
+  body #Home #HomeContain #Text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #Home #HomeContain #Text #logo {
+    width: 300px;
+  }
+  body #Home #HomeContain #Text #info {
+    font-family: "Poppins", sans-serif;
+    padding: 0 2rem;
+    font-size: 70%;
+    font-weight: 600;
+  }
+  body #Home #HomeContain #Text #info p {
+    padding-bottom: 2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    width: 18rem;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input,
+  body #Home #HomeContain #Text #info #Suscribe button {
+    font-size: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input i,
+  body #Home #HomeContain #Text #info #Suscribe button i {
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
+  body #Home #HomeContain #Text #info #Suscribe input {
+    width: 100%;
+    outline: none;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button {
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 0.8rem 0.8rem;
+    border-radius: 0 1rem 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  body #Home #HomeContain #Text #info #Suscribe button:hover {
+    background-color: rgb(81, 81, 81);
+  }
+  body #Home #images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  body #Home #images #ImgAnime {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    transform: skew(-20deg);
+    overflow: hidden;
+  }
+  body #Home #images #ImgAnime img {
+    width: auto;
+    height: 100%;
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+  body #Home #fondo {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 100%;
+  }
+  body #images {
+    display: none;
+  }
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-38%) scale(1.2);
+    }
+    100% {
+      transform: translateX(8%) scale(1.2);
+    }
   }
 }/*# sourceMappingURL=Styles.css.map */

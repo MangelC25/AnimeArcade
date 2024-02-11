@@ -36,18 +36,17 @@
         transition: all 0.2s ease-in-out;
 
         &:hover {
-          background-color: rgb(211, 211, 211);
+          background-color: white;
           color: Variables.$text-color;
         }
 
         &.active {
-          background-color: rgb(211, 211, 211);
+          background-color: white;
           color: Variables.$text-color;
         }
       }
 
       #headernavbar {
-
         width: 100%;
         #navbar {
           #nav-container {
@@ -87,14 +86,14 @@
           &.active {
             transition: all 0.2s ease-in-out;
             border-radius: 5%;
-            background-color: rgb(207, 207, 207);
+            background-color: white;
             > a {
               color: Variables.$text-color;
             }
           }
 
           ul {
-            background-color: grey;
+            background-color: Variables.$bg-navbar;
             max-height: 0;
             overflow: hidden;
             position: absolute;
@@ -103,12 +102,13 @@
             width: 12rem;
             transition: max-height 0.4s ease-in-out;
 
-            li{
-              &.active, :hover {
+            li {
+              &.active,
+              :hover {
                 transition: all 0.2s ease-in-out;
                 background-color: white;
                 color: Variables.$text-color;
-              } 
+              }
             }
           }
         }
@@ -119,6 +119,18 @@
 
 @media (max-width: 1920px) {
   @include Header(140%, 10rem, none);
+
+  body {
+    .header {
+      ul {
+        li {
+          > ul {
+            width: 16rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1440px) {

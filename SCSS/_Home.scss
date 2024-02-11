@@ -1,124 +1,239 @@
 @use "GeneralStyles" as Variables;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 
-body {
-  #Home {
-    color: Variables.$text-Home;
-    margin-top: 5.5rem;
-    padding: 0 8%;
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 35.6rem;
-    overflow: hidden;
-
-    #fondo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      filter: brightness(0.5);
-      z-index: -1;
-      animation: slideBackground 8s infinite alternate;
-    }
-
-    #HomeContain {
-      padding: 1rem;
-      width: 38rem;
-      height: fit-content;
+@mixin Home(
+  $marginHome,
+  $heigthHome,
+  $fontsize,
+  $widthlogo,
+  $widthHomeC,
+  $widthSuscribe
+) {
+  body {
+    #Home {
+      color: Variables.$text-Home;
+      margin-top: $marginHome;
+      padding: 0 8%;
+      position: relative;
       display: flex;
-      position: relative;
-
-      #Text {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;    
-
-        #info {
-          font-family: 'Poppins', sans-serif;
-          padding: 0 2rem;
-
-          p {
-            padding-bottom: 2rem;
-          }
-
-          #Suscribe {
-            background-color: rgb(209, 209, 205);
-            border-radius: 1rem;
-            display: flex;
-            width: 27rem;
-            align-items: center;
-            gap: 1rem;
-            padding: 0.6rem 1rem;
-
-            #S {
-              background-color: rgb(53, 53, 53);
-              padding: 0.8rem 0.8rem;
-              border-radius: 1rem;
-              margin-left: -1rem;
-            }
-
-            input,
-            button {
-              border: none;
-              display: flex;
-              background-color: transparent;
-
-              i {
-                vertical-align: middle;
-                font-size: 1.1rem;
-              }
-            }
-
-            input {
-              width: 100%;
-              outline: none;
-            }
-
-            button {
-              cursor: pointer;
-            }
-          }
-        }
-      }
-    }
-
-    #images {
+      justify-content: center;
       width: 100%;
-      height: 100%;
-      position: relative;
+      height: $heigthHome;
+      overflow: hidden;
 
-      #ImgAnime {
-        width: 90%;
-        height: 100%;
+      #fondo {
         position: absolute;
         top: 0;
-        left: 10%;
-        display: flex;
-        justify-content: center;
-        transform: skew(-20deg);
-        overflow: hidden; 
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        filter: brightness(0.4);
+        z-index: -1;
+        animation: slideBackground 8s infinite alternate;
+      }
 
-        img{
-            width: auto; 
-            height: 100%; 
+      #HomeContain {
+        padding: 1rem;
+        width: $widthHomeC;
+        height: fit-content;
+        display: flex;
+        position: relative;
+
+        #Text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          #logo {
+            width: $widthlogo;
+          }
+
+          #info {
+            font-family: "Poppins", sans-serif;
+            padding: 0 2rem;
+            font-size: $fontsize;
+            font-weight: 600;
+
+            p {
+              padding-bottom: 2rem;
+            }
+
+            #Suscribe {
+              background-color: white;
+              border-radius: 1rem;
+              display: flex;
+              width: $widthSuscribe;
+              align-items: center;
+              gap: 1rem;
+              padding-left: 1rem;
+
+              input,
+              button {
+                font-size: 100%;
+                border: none;
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+
+                i {
+                  color: white;
+                  vertical-align: middle;
+                  font-size: 1.2rem;
+                }
+              }
+
+              input {
+                width: 100%;
+                outline: none;
+              }
+
+              button {
+                background-color: rgb(53, 53, 53);
+                color: white;
+                padding: 0.8rem 0.8rem;
+                border-radius: 0 1rem 1rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out;
+
+                &:hover{
+                  background-color: rgb(81, 81, 81);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      #images {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        #ImgAnime {
+          width: 90%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 10%;
+          display: flex;
+          justify-content: center;
+          transform: skew(-20deg);
+          overflow: hidden;
+
+          img {
+            width: auto;
+            height: 100%;
             display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-6%) scale(1.2);
+    }
+    100% {
+      transform: translateX(6%) scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  @include Home(5.5rem, 46.6rem, 140%, 700px, 80rem, 35rem);
+
+  body {
+    #Home {
+      #images {
+        #ImgAnime {
+          width: 80%;
+          left: 20%;
         }
       }
     }
   }
 }
 
-@keyframes slideBackground {
-  0% {
-    transform: translateX(-6%) scale(1.2);
-  }
-  100% {
-    transform: translateX(6%) scale(1.2);
+@media (max-width: 1440px) {
+  @include Home(5.5rem, 35.6rem, 100%, 500px, 38rem, 27rem);
+}
+
+@media (max-width: 1367px) {
+  @include Home(5.5rem, 35.6rem, 100%, 500px, 38rem, 27rem);
+}
+
+@media (max-width: 1280px) {
+  @include Home(5.5rem, 35.6rem, 100%, 500px, 38rem, 27rem);
+}
+
+@media (max-width: 1025px) {
+  @include Home(3.8rem, 30rem, 75%, 380px, 25rem, 22rem);
+}
+
+@media (max-width: 769px) {
+  @include Home(3.8rem, 27rem, 75%, 300px, 20rem, 18rem);
+
+  body{
+    #Home {
+     padding: 0 2%;
+    }
   }
 }
 
+@media (max-width: 425px) {
+  @include Home(4.3rem, 26rem, 75%, 340px, 20rem, 18rem);
+  body {
+    #Home {
+      p {
+        text-align: center;
+      }
+      #fondo {
+        width: fit-content;
+        height: 100%;
+      }
+    }
+    #images {
+      display: none;
+    }
+  }
+
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-38%) scale(1.2);
+    }
+    100% {
+      transform: translateX(8%) scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  @include Home(4.3rem, 24rem, 70%, 300px, fit-content, 18rem);
+  body {
+    #Home {
+      #fondo {
+        width: fit-content;
+        height: 100%;
+      }
+    }
+    #images {
+      display: none;
+    }
+  }
+
+  @keyframes slideBackground {
+    0% {
+      transform: translateX(-38%) scale(1.2);
+    }
+    100% {
+      transform: translateX(8%) scale(1.2);
+    }
+  }
+}
