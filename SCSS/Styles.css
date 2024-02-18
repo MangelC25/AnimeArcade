@@ -1671,24 +1671,59 @@ section {
   }
 }
 body #News {
-  padding: 5% 11%;
+  padding: 5% 0;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+body #News hr {
+  margin-top: 1rem;
+  border-left: solid black 1px;
+  border-radius: 10%;
 }
 body #News #NewsContent {
   padding: 1rem;
 }
-body #News #NewsContent .Card {
+body #News #NewsContent .carousel {
+  width: 100%;
+  position: relative;
+}
+body #News #NewsContent .carousel .carousel-inner {
+  display: flex;
+  padding: 0 3rem;
+}
+body #News #NewsContent .carousel .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1;
+}
+body #News #NewsContent .carousel .prev {
+  left: 0;
+}
+body #News #NewsContent .carousel .next {
+  right: 0;
+}
+body #News #NewsContent .slide {
+  margin-top: 1.5rem;
+}
+body #News #NewsContent .slide .Card {
   border-radius: 5%;
+  width: 65rem;
   display: flex;
   height: 24rem;
 }
-body #News #NewsContent .Card .ImgContainer {
+body #News #NewsContent .slide .Card .ImgContainer {
   width: 50%;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-body #News #NewsContent .Card .ImgContainer img {
+body #News #NewsContent .slide .Card .ImgContainer img {
   display: block;
   position: relative;
   width: 100%;
@@ -1696,10 +1731,13 @@ body #News #NewsContent .Card .ImgContainer img {
   transition: transform 0.3s ease-in-out;
   z-index: -1;
 }
-body #News #NewsContent .Card .ImgContainer #AnimeNews1 {
+body #News #NewsContent .slide .Card .ImgContainer #AnimeNews1 {
   border-radius: 5% 0 0 5%;
 }
-body #News #NewsContent .Card .ImgContainer::before {
+body #News #NewsContent .slide .Card .ImgContainer #MangaNews1 {
+  border-radius: 0 5% 5% 0;
+}
+body #News #NewsContent .slide .Card .ImgContainer::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1710,30 +1748,31 @@ body #News #NewsContent .Card .ImgContainer::before {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-body #News #NewsContent .Card .ImgContainer:hover::before {
+body #News #NewsContent .slide .Card .ImgContainer:hover::before {
   opacity: 1;
 }
-body #News #NewsContent .Card .ImgContainer:hover img {
+body #News #NewsContent .slide .Card .ImgContainer:hover img {
   transform: scale(1.2);
 }
-body #News #NewsContent .Card .TextContainer {
-  margin-top: 1rem;
+body #News #NewsContent .slide .Card .TextContainer {
   padding: 1rem 2rem;
   width: 100%;
 }
-body #News #NewsContent .Card .TextContainer #infoA {
+body #News #NewsContent .slide .Card .TextContainer #infoA,
+body #News #NewsContent .slide .Card .TextContainer #infoM {
   display: flex;
   gap: 2rem;
   padding: 0.5rem 0;
 }
-body #News #NewsContent .Card .TextContainer #TitleAnime {
+body #News #NewsContent .slide .Card .TextContainer #TitleAnime,
+body #News #NewsContent .slide .Card .TextContainer #TitleManga {
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
 }
-body #News #NewsContent .Card .TextContainer p {
+body #News #NewsContent .slide .Card .TextContainer p {
   margin-bottom: 2rem;
 }
-body #News #NewsContent .Card .TextContainer a {
+body #News #NewsContent .slide .Card .TextContainer a {
   border-radius: 5%;
   padding: 0.5em;
   margin-right: 1rem;
@@ -1741,10 +1780,11 @@ body #News #NewsContent .Card .TextContainer a {
   color: white;
   transition: all 0.3s ease-in-out;
 }
-body #News #NewsContent .Card .TextContainer a:hover {
+body #News #NewsContent .slide .Card .TextContainer a:hover {
   background-color: blue;
 }
-body #News #NewsContent .Card .TextContainer #ReadA {
+body #News #NewsContent .slide .Card .TextContainer #ReadA,
+body #News #NewsContent .slide .Card .TextContainer #ReadM {
   border-top: 1px solid black;
   padding: 1rem 0;
   margin-top: 3.5rem;
@@ -1752,16 +1792,16 @@ body #News #NewsContent .Card .TextContainer #ReadA {
   justify-content: space-between;
   align-items: center;
 }
-body #News #NewsContent #Card1 {
+body #News #NewsContent .slide #Card1 {
   margin-bottom: 2rem;
   box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.7);
 }
-body #News #NewsContent #Card1 > .TextContainer {
+body #News #NewsContent .slide #Card1 > .TextContainer {
   background: linear-gradient(to right, rgb(186, 186, 186), white);
 }
-body #News #NewsContent #Card2 {
+body #News #NewsContent .slide #Card2 {
   box-shadow: 5px 5px 12px black;
 }
-body #News #NewsContent #Card2 > .TextContainer {
+body #News #NewsContent .slide #Card2 > .TextContainer {
   background: linear-gradient(to left, rgb(186, 186, 186), white);
 }/*# sourceMappingURL=Styles.css.map */
