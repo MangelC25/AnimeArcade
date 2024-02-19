@@ -22,12 +22,12 @@ body {
       .carousel {
         width: 100%;
         position: relative;
-
+      
         .carousel-inner {
           display: flex;
-          padding: 0 3rem;
+          padding: 1rem 3rem;
         }
-
+      
         .carousel-control {
           position: absolute;
           top: 50%;
@@ -38,13 +38,32 @@ body {
           cursor: pointer;
           z-index: 1;
         }
-
+      
         .prev {
           left: 0;
         }
-
+      
         .next {
           right: 0;
+        }
+      }
+      
+      .carousel-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      
+      .carousel-indicator {
+        width: 10px;
+        height: 10px;
+        background-color: rgb(161, 161, 161);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+      
+        &.active {
+          background-color: black;
         }
       }
 

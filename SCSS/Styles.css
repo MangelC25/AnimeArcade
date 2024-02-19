@@ -1690,7 +1690,7 @@ body #News #NewsContent .carousel {
 }
 body #News #NewsContent .carousel .carousel-inner {
   display: flex;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
 }
 body #News #NewsContent .carousel .carousel-control {
   position: absolute;
@@ -1707,6 +1707,22 @@ body #News #NewsContent .carousel .prev {
 }
 body #News #NewsContent .carousel .next {
   right: 0;
+}
+body #News #NewsContent .carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+body #News #NewsContent .carousel-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(161, 161, 161);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+body #News #NewsContent .carousel-indicator.active {
+  background-color: black;
 }
 body #News #NewsContent .slide {
   margin-top: 1.5rem;
