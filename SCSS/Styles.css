@@ -1804,4 +1804,21 @@ body #News #NewsContent .slide #Card2 {
 }
 body #News #NewsContent .slide #Card2 > .TextContainer {
   background: linear-gradient(to left, rgb(186, 186, 186), white);
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes slide2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=Styles.css.map */

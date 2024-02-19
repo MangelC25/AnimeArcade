@@ -11,5 +11,7 @@ function ImagesHome() {
     images[index].style.display = 'block';
     setInterval(showNextImage, 4000);
 }
+
+
    
 export default ImagesHome;

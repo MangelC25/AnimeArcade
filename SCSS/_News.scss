@@ -48,7 +48,7 @@ body {
         }
       }
 
-      .slide {
+      .slide{
         margin-top: 1.5rem;
         .Card {
           border-radius: 5%;
@@ -166,5 +166,23 @@ body {
         }
       }
     }
+  }
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
