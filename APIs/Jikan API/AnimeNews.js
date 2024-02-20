@@ -1,7 +1,7 @@
 const Url = "https://api.jikan.moe/v4";
 
 // Función para actualizar los elementos HTML con los datos del anime
-function actualizarElementosHTML(slideElement, latestNews, anime) {
+async function actualizarElementosHTML(slideElement, latestNews, anime) {
     const TitleAnime = slideElement.querySelector("#TitleAnime");
     const PAnime = slideElement.querySelector("#NewAnime");
     const autorP = slideElement.querySelector("#autorP");
@@ -35,7 +35,6 @@ function actualizarElementosHTML(slideElement, latestNews, anime) {
             GeneroA.textContent = themesText.slice(0, -2);
             TypeA.textContent = anime.type;
             TypeA.style.background = "red";
-            TypeA.style.padding = "0 10px";
             TypeA.style.color = "white";
         }
     } else if (anime.type === "TV") {
@@ -47,14 +46,13 @@ function actualizarElementosHTML(slideElement, latestNews, anime) {
             GeneroA.textContent = genresText.slice(0, -2);
             TypeA.textContent = anime.type;
             TypeA.style.background = "blue";
-            TypeA.style.padding = "0 10px";
             TypeA.style.color = "white";
         }
     }
 }
 
 // Función para obtener las noticias de un anime
-function obtenerNoticiasAnime(animeId, slideElement) {
+async function obtenerNoticiasAnime(animeId, slideElement) {
     const news = `${Url}/anime/${animeId}/news`;
     const Anime = `${Url}/anime/${animeId}`;
 
@@ -66,7 +64,6 @@ function obtenerNoticiasAnime(animeId, slideElement) {
             return respuesta.json();
         })
         .then((data) => {
-            console.log("Noticias del anime:", data);
             const latestNews = data.data[0];
 
             fetch(Anime)
@@ -76,10 +73,9 @@ function obtenerNoticiasAnime(animeId, slideElement) {
                     }
                     return respuesta.json();
                 })
-                .then((data) => {
-                    console.log("Anime:", data);
+                .then(async (data) => {
                     const anime = data.data;
-                    actualizarElementosHTML(slideElement, latestNews, anime);
+                    await actualizarElementosHTML(slideElement, latestNews, anime);
                 })
                 .catch((error) => {
                     console.error("Error al obtener las noticias:", error);
@@ -91,6 +87,6 @@ function obtenerNoticiasAnime(animeId, slideElement) {
 }
 
 // Función principal para obtener las noticias de todos los slides
-export function GetAnimeNes(AnimeId, slideElement) {
+export async function GetAnimeNes(AnimeId, slideElement) {
   obtenerNoticiasAnime(AnimeId, slideElement);
 }

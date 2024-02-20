@@ -54,7 +54,7 @@ export function carousel() {
   function startCarousel() {
     slideInterval = setInterval(() => {
       nextSlide();
-    }, 20000);
+    }, 10000);
   }
 
   function resetInterval() {

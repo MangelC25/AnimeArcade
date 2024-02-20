@@ -2,185 +2,288 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 
-body {
-  #News {
-    padding: 5% 0;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
+@mixin News($fontsize, $widthNewsC, $heigthNews, $heigthCards, $widthImg) {
+  body {
+    #News {
+      padding: 5% 0;
+      width: 100%;
+      height: $heigthNews;
+      font-family: "Poppins", sans-serif;
+      font-size: $fontsize;
+      display: flex;
+      justify-content: center;
 
-    hr{
-      margin-top: 1rem;
-      border-left: solid black 1px;
-      border-radius: 10%;
-    }
-
-    #NewsContent {
-      padding: 1rem;
-      
-
-      .carousel {
-        width: 100%;
-        position: relative;
-      
-        .carousel-inner {
-          display: flex;
-          padding: 1rem 3rem;
-        }
-      
-        .carousel-control {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background: transparent;
-          border: none;
-          font-size: 24px;
-          cursor: pointer;
-          z-index: 1;
-        }
-      
-        .prev {
-          left: 0;
-        }
-      
-        .next {
-          right: 0;
-        }
-      }
-      
-      .carousel-indicators {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      
-      .carousel-indicator {
-        width: 10px;
-        height: 10px;
-        background-color: rgb(161, 161, 161);
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-      
-        &.active {
-          background-color: black;
-        }
+      hr {
+        margin-top: 1rem;
+        border-left: solid black 1px;
+        border-radius: 10%;
       }
 
-      .slide{
-        margin-top: 1.5rem;
-        .Card {
-          border-radius: 5%;
-          width: 65rem;
-          display: flex;
-          height: 24rem;
+      #NewsContent {
+        padding: 1rem;
+        height: fit-content;
 
-          .ImgContainer {
-            width: 50%;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
+        .carousel {
+          width: 100%;
+          position: relative;
 
-            img {
-              display: block;
-              position: relative;
-              width: 100%;
-              height: 100%;
-              transition: transform 0.3s ease-in-out;
-              z-index: -1;
-            }
-
-            #AnimeNews1 {
-              border-radius: 5% 0 0 5%;
-            }
-
-            #MangaNews1 {
-              border-radius: 0 5% 5% 0;
-            }
-
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 50%;
-              background: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0),
-                rgba(0, 0, 0, 0.7)
-              );
-              opacity: 0;
-              transition: opacity 0.5s ease-in-out;
-            }
-
-            &:hover::before {
-              opacity: 1;
-            }
-
-            &:hover img {
-              transform: scale(1.2);
-            }
+          .carousel-inner {
+            display: flex;
+            padding: 1rem 3rem;
           }
 
-          .TextContainer {
-            padding: 1rem 2rem;
-            width: 100%;
+          .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1;
+          }
 
-            #infoA,
-            #infoM {
-              display: flex;
-              gap: 2rem;
-              padding: 0.5rem 0;
-            }
+          .prev {
+            left: 0;
+          }
 
-            #TitleAnime,
-            #TitleManga {
-              font-size: 1.3rem;
-              padding-bottom: 0.5rem;
-            }
+          .next {
+            right: 0;
+          }
+        }
 
-            p {
-              margin-bottom: 2rem;
-            }
+        .carousel-indicators {
+          display: flex;
+          justify-content: center;
+          margin-top: 2rem;
+        }
 
-            a {
-              border-radius: 5%;
-              padding: 0.5em;
-              margin-right: 1rem;
-              background-color: rgb(0, 0, 0);
-              color: white;
-              transition: all 0.3s ease-in-out;
+        .carousel-indicator {
+          width: 1rem;
+          height: 1rem;
+          background-color: rgb(161, 161, 161);
+          border-radius: 50%;
+          margin: 0 5px;
+          cursor: pointer;
 
-              &:hover {
-                background-color: blue;
+          &.active {
+            background-color: black;
+          }
+        }
+
+        .slide {
+          margin-top: 1.5rem;
+
+          .Card {
+            border-radius: 5%;
+            width: $widthNewsC;
+            display: flex;
+            height: $heigthCards;
+
+            .ImgContainer {
+              width: $widthImg;
+              position: relative;
+              overflow: hidden;
+              cursor: pointer;
+
+              #TypeA, #TypeM{
+                position: absolute;
+                top: 0.5rem;
+                padding: 0.5rem;
+              }
+
+              #TypeA{
+                left: 0.7rem;
+              }
+
+              #TypeM{
+                right: 0.7rem;
+              }
+
+              img {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transition: transform 0.3s ease-in-out;
+                z-index: -1;
+              }
+
+              #AnimeNews1 {
+                border-radius: 5% 0 0 5%;
+              }
+
+              #MangaNews1 {
+                border-radius: 0 5% 5% 0;
+              }
+
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50%;
+                background: linear-gradient(
+                  to bottom,
+                  rgba(0, 0, 0, 0),
+                  rgba(0, 0, 0, 0.7)
+                );
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+              }
+
+              &:hover::before {
+                opacity: 1;
+              }
+
+              &:hover img {
+                transform: scale(1.2);
               }
             }
 
-            #ReadA,
-            #ReadM {
-              border-top: 1px solid black;
-              padding: 1rem 0;
-              margin-top: 3.5rem;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
+            .TextContainer {
+              padding: 1rem;
+              width: 100%;
+              height: 100%;
+
+              #infoA,
+              #infoM {
+                display: flex;
+                gap: 2rem;
+                padding: 1rem 0;
+              }
+
+              #TitleAnime,
+              #TitleManga {
+                padding-bottom: 1rem;
+              }
+
+              p {
+                width: 100%;
+                margin-bottom: 3rem;
+              }
+
+              a {
+                border-radius: 5%;
+                padding: 0.5rem 1rem;
+                margin-right: 1rem;
+                background-color: rgb(0, 0, 0);
+                color: white;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                  background-color: blue;
+                }
+              }
+
+              #ReadA,
+              #ReadM {
+                border-top: 1px solid black;
+                padding: 2rem 0;
+                margin-top: 3.5rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+            }
+          }
+
+          #Card1 {
+            margin-bottom: 3rem;
+            box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.7);
+            > .TextContainer {
+              background: linear-gradient(to right, rgb(186, 186, 186), white);
+            }
+          }
+
+          #Card2 {
+            box-shadow: 5px 5px 12px black;
+            > .TextContainer {
+              background: linear-gradient(to left, rgb(186, 186, 186), white);
             }
           }
         }
+      }
+    }
+  }
 
-        #Card1 {
-          margin-bottom: 2rem;
-          box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.7);
-          > .TextContainer {
-            background: linear-gradient(to right, rgb(186, 186, 186), white);
+  @keyframes slide1 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes slide2 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+@media (max-width: 1920px) {
+  @include News(140%, 87rem, 100rem, 34rem, 60%);
+}
+
+@media (max-width: 1440px) {
+  @include News(100%, 62.8rem, 80rem, 28rem, 60%);
+}
+
+@media (max-width: 1400px) {
+  @include News(100%, 62.8rem, 80rem, 28rem, 50%);
+}
+
+@media (max-width: 1367px) {
+  @include News(100%, 58rem, 80rem, 28rem, 50%);
+}
+
+@media (max-width: 1280px) {
+  @include News(92%, 54rem, 80rem, 27rem, 50%);
+}
+
+@media (max-width: 1025px) {
+  @include News(68%, 45rem, 70rem, 23rem, 55%);
+}
+
+@media (max-width: 769px) {
+  @include News(70%, 44.5rem, 70rem, 22rem, 50%);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-inner {
+            padding: 0;
+          }
+
+          .carousel-control {
+            display: none;
           }
         }
 
-        #Card2 {
-          box-shadow: 5px 5px 12px black;
-          > .TextContainer {
-            background: linear-gradient(to left, rgb(186, 186, 186), white);
+        .carousel-indicator {
+          width: 0.7rem;
+          height: 0.7rem;
+        }
+
+        .slide {
+          .Card {
+            .TextContainer {
+              p {
+                font-size: 110%;
+                margin-bottom: 2rem;
+              }
+
+              #ReadA,
+              #ReadM {
+                padding: 2rem 0;
+                margin-top: 3rem;
+              }
+            }
           }
         }
       }
@@ -188,20 +291,62 @@ body {
   }
 }
 
-@keyframes slide1 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
+@media (max-width: 425px) {
+  @include News(70%, 23rem, 115rem, auto, auto);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-inner {
+            padding: 0;
+          }
 
-@keyframes slide2 {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0%);
+
+          .next{
+            right: -1.5rem;
+          }
+
+          .prev{
+            left: -1.5rem;
+          }
+        }
+
+        .slide {
+
+          .Card{
+            .ImgContainer {
+              width: 100%; 
+              height: 18rem;
+
+              #TypeA{
+                left:90%;
+              }
+
+              #TypeM{
+                right: 0.7rem;
+              }
+            }
+
+            .TextContainer {
+              padding: 1rem;
+              height: 27rem;
+              
+              #infoA,
+              #infoM {
+                font-size: 90%;
+                gap: 1rem;
+              }
+            }
+          }
+
+          #Card1 {
+            flex-direction: column;
+          }
+          #Card2 {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
   }
 }

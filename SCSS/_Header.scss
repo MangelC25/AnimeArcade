@@ -93,7 +93,7 @@
           }
 
           ul {
-            background-color: Variables.$bg-navbar;
+            background-color: gray;
             max-height: 0;
             overflow: hidden;
             position: absolute;
@@ -188,6 +188,11 @@
           ul {
             position: static;
             width: 100%;
+            
+          }
+
+          &.active {
+            border-radius: 0;
           }
         }
       }

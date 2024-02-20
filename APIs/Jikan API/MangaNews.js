@@ -37,20 +37,18 @@ function actualizarElementosHTML(slideElement, latestNews, manga) {
       });
       GeneroM.textContent = themesText.slice(0, -2);
       TypeM.textContent = manga.type;
-      TypeM.style.background = "green";
-      TypeM.style.padding = "0 10px";
+      TypeM.style.background = "green";;
       TypeM.style.color = "white";
     }
   } else if (manga.type === "Manga") {
     if (manga.genres && manga.genres.length > 0) {
       let genresText = "";
       manga.genres.forEach((genre) => {
-          genresText += genre.name + ", ";
+        genresText += genre.name + ", ";
       });
       GeneroM.textContent = genresText.slice(0, -2);
       TypeM.textContent = manga.type;
       TypeM.style.background = "green";
-      TypeM.style.padding = "0 10px";
       TypeM.style.color = "white";
     }
   }
@@ -69,7 +67,6 @@ function obtenerNoticiasManga(mangaId, slideElement) {
       return respuesta.json();
     })
     .then((data) => {
-      console.log("Noticias del manga:", data);
       const latestNews = data.data[0];
 
       fetch(Manga)
@@ -80,7 +77,6 @@ function obtenerNoticiasManga(mangaId, slideElement) {
           return respuesta.json();
         })
         .then((data) => {
-          console.log("Manga:", data);
           const manga = data.data;
           actualizarElementosHTML(slideElement, latestNews, manga);
         })
