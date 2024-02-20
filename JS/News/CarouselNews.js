@@ -6,6 +6,8 @@ export function carousel() {
 
   let currentSlide = 0;
   let slideInterval;
+  let touchstartX = 0;
+  let touchendX = 0;
 
   // Función para mostrar la diapositiva actual
   function showSlide() {
@@ -49,6 +51,25 @@ export function carousel() {
   nextButton.addEventListener("click", () => {
     nextSlide();
   });
+
+  // Event listeners para eventos táctiles
+  document.addEventListener("touchstart", (event) => {
+    touchstartX = event.touches[0].clientX;
+  });
+
+  document.addEventListener("touchend", (event) => {
+    touchendX = event.changedTouches[0].clientX;
+    handleGesture();
+  });
+
+  function handleGesture() {
+    if (touchendX < touchstartX) {
+      nextSlide();
+    } else if (touchendX > touchstartX) {
+      prevSlide();
+      resetInterval();
+    }
+  }
 
   // Iniciar el carrusel automáticamente
   function startCarousel() {

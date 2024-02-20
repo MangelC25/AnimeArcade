@@ -146,11 +146,11 @@
 }
 
 @media (max-width: 1025px) {
-  @include Header(70%, 7rem, none);
+  @include Header(75%, 7rem, none);
 }
 
 @media (max-width: 769px) {
-  @include Header(70%, 7rem, block);
+  @include Header(75%, 7rem, block);
 
   body {
     .header {

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 
 @mixin News($fontsize, $widthNewsC, $heigthNews, $heigthCards, $widthImg) {
+
   body {
     #News {
       padding: 5% 0;
@@ -34,6 +35,7 @@
 
           .carousel-control {
             position: absolute;
+            font-size: 2.5rem;
             top: 50%;
             transform: translateY(-50%);
             background: transparent;
@@ -43,11 +45,11 @@
           }
 
           .prev {
-            left: 0;
+            left: -2rem;
           }
 
           .next {
-            right: 0;
+            right: -2rem;
           }
         }
 
@@ -85,17 +87,19 @@
               overflow: hidden;
               cursor: pointer;
 
-              #TypeA, #TypeM{
+              #TypeA,
+              #TypeM {
+                border-radius: 5%;
                 position: absolute;
                 top: 0.5rem;
                 padding: 0.5rem;
               }
 
-              #TypeA{
+              #TypeA {
                 left: 0.7rem;
               }
 
-              #TypeM{
+              #TypeM {
                 right: 0.7rem;
               }
 
@@ -227,31 +231,55 @@
 }
 
 @media (max-width: 1920px) {
-  @include News(140%, 87rem, 100rem, 34rem, 60%);
+  @include News(140%, 87rem, 110rem, 37rem, 65%);
 }
 
 @media (max-width: 1440px) {
-  @include News(100%, 62.8rem, 80rem, 28rem, 60%);
+  @include News(100%, 62.8rem, 90rem, 30rem, 65%);
 }
 
 @media (max-width: 1400px) {
-  @include News(100%, 62.8rem, 80rem, 28rem, 50%);
+  @include News(100%, 62.8rem, 85rem, 30rem, 65%);
 }
 
 @media (max-width: 1367px) {
-  @include News(100%, 58rem, 80rem, 28rem, 50%);
+  @include News(100%, 58rem, 90rem, 30rem, 65%);
 }
 
 @media (max-width: 1280px) {
-  @include News(92%, 54rem, 80rem, 27rem, 50%);
+  @include News(100%, 55rem, 88rem, 30rem, 60%);
+  body {
+    #News {
+    #NewsContent {
+      .carousel {
+        .carousel-control {
+          font-size: 2rem;
+          
+        }
+      }
+    }
+    }
+  }
 }
 
 @media (max-width: 1025px) {
-  @include News(68%, 45rem, 70rem, 23rem, 55%);
+  @include News(75%, 45rem, 80rem, 27rem, 65%);
+
+  body {
+    #News {
+    #NewsContent {
+      .carousel {
+        .carousel-control {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    }
+  }
 }
 
 @media (max-width: 769px) {
-  @include News(70%, 44.5rem, 70rem, 22rem, 50%);
+  @include News(80%, 44.5rem, 75rem, 26rem, 50%);
   body {
     #News {
       #NewsContent {
@@ -292,7 +320,7 @@
 }
 
 @media (max-width: 425px) {
-  @include News(70%, 23rem, 115rem, auto, auto);
+  @include News(75%, 23rem, 115rem, auto, auto);
   body {
     #News {
       #NewsContent {
@@ -301,28 +329,26 @@
             padding: 0;
           }
 
-
-          .next{
+          .next {
             right: -1.5rem;
           }
 
-          .prev{
+          .prev {
             left: -1.5rem;
           }
         }
 
         .slide {
-
-          .Card{
+          .Card {
             .ImgContainer {
-              width: 100%; 
+              width: 100%;
               height: 18rem;
 
-              #TypeA{
-                left:90%;
+              #TypeA {
+                left: 90%;
               }
 
-              #TypeM{
+              #TypeM {
                 right: 0.7rem;
               }
             }
@@ -330,7 +356,7 @@
             .TextContainer {
               padding: 1rem;
               height: 27rem;
-              
+
               #infoA,
               #infoM {
                 font-size: 90%;
@@ -344,6 +370,66 @@
           }
           #Card2 {
             flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  @include News(70%, 22rem, 115rem, auto, auto);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-inner {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  @include News(70%, 21rem, 115rem, auto, auto);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-inner {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  @include News(70%, 20rem, 115rem, auto, auto);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-inner {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  @include News(70%, 18rem, 115rem, auto, auto);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-inner {
+            padding: 0;
           }
         }
       }

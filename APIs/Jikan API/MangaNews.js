@@ -29,15 +29,15 @@ function actualizarElementosHTML(slideElement, latestNews, manga) {
   ).slice(-2)}-${("0" + fecha.getDate()).slice(-2)}`;
   DatePublication.textContent = fechaFormateada;
 
-  if (manga.type === "Movie") {
-    if (manga.themes && manga.themes.length > 0) {
-      let themesText = "";
-      manga.themes.forEach((theme) => {
-        themesText += theme.name + ", ";
+  if (manga.type === "Light Novel") {
+    if (manga.genres && manga.genres.length > 0) {
+      let genresText = "";
+      manga.genres.forEach((genre) => {
+        genresText += genre.name + ", ";
       });
-      GeneroM.textContent = themesText.slice(0, -2);
+      GeneroM.textContent = genresText.slice(0, -2);
       TypeM.textContent = manga.type;
-      TypeM.style.background = "green";;
+      TypeM.style.background = "goldenrod";
       TypeM.style.color = "white";
     }
   } else if (manga.type === "Manga") {

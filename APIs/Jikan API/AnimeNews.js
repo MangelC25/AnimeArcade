@@ -48,6 +48,17 @@ async function actualizarElementosHTML(slideElement, latestNews, anime) {
             TypeA.style.background = "blue";
             TypeA.style.color = "white";
         }
+    } else if (anime.type === "OVA") {
+        if (anime.genres && anime.genres.length > 0) {
+            let genresText = "";
+            anime.genres.forEach((genre) => {
+                genresText += genre.name + ", ";
+            });
+            GeneroA.textContent = genresText.slice(0, -2);
+            TypeA.textContent = anime.type;
+            TypeA.style.background = "darkmagenta";
+            TypeA.style.color = "white";
+        }
     }
 }
 

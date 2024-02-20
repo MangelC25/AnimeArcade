@@ -178,7 +178,7 @@
 }
 
 @media (max-width: 769px) {
-  @include Home(3.8rem, 27rem, 75%, 300px, 20rem, 18rem);
+  @include Home(3.8rem, 27rem, 80%, 300px, 20rem, 18rem);
 
   body{
     #Home {

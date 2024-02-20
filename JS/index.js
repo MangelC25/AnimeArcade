@@ -11,12 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
   setupMenu();
   NavResposive();
   ImagesHome();
-  GetMangaNes(125725, slide[0]);
-  GetAnimeNes(53770, slide[0]);
-  GetMangaNes(143609, slide[1]);
-  GetAnimeNes(55877, slide[1]);
-  GetMangaNes(138673, slide[2]);
-  GetAnimeNes(55855, slide[2]);
+  GetMangaNes(131030, slide[0]);
+  GetAnimeNes(56980, slide[0]);
+  GetMangaNes(125725, slide[1]);
+  GetAnimeNes(58173, slide[1]);
+  GetMangaNes(143609, slide[2]);
+  GetAnimeNes(53770, slide[2]);
   carousel();
   
   console.log("slides", slide);
