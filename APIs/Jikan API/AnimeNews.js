@@ -67,17 +67,17 @@ async function obtenerNoticiasAnime(animeId, slideElement) {
     const news = `${Url}/anime/${animeId}/news`;
     const Anime = `${Url}/anime/${animeId}`;
 
-    fetch(news)
+    await fetch(news)
         .then((respuesta) => {
             if (!respuesta.ok) {
                 throw new Error("Error al obtener las noticias del anime");
             }
             return respuesta.json();
         })
-        .then((data) => {
+        .then(async (data) => {
             const latestNews = data.data[0];
 
-            fetch(Anime)
+           await fetch(Anime)
                 .then((respuesta) => {
                     if (!respuesta.ok) {
                         throw new Error("Error al obtener el anime");

@@ -51,7 +51,18 @@ function actualizarElementosHTML(slideElement, latestNews, manga) {
       TypeM.style.background = "green";
       TypeM.style.color = "white";
     }
-  }
+  } else if (manga.type === "Movie") {
+    if (manga.themes && manga.themes.length > 0) {
+        let themesText = "";
+        manga.themes.forEach((theme) => {
+            themesText += theme.name + ", ";
+        });
+        GeneroM.textContent = themesText.slice(0, -2);
+        TypeM.textContent = manga.type;
+        TypeM.style.background = "red";
+        TypeM.style.color = "white";
+    }
+}
 }
 
 // Función para obtener las noticias de un manga
