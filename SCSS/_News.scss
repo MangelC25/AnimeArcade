@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 
 @mixin News($fontsize, $widthNewsC, $heigthNews, $heigthCards, $widthImg) {
-
   body {
     #News {
       padding: 5% 0;
@@ -15,9 +14,8 @@
       justify-content: center;
 
       hr {
-        margin-top: 1rem;
         border-left: solid black 1px;
-        border-radius: 10%;
+        margin-bottom: 0;
       }
 
       #NewsContent {
@@ -231,55 +229,64 @@
 }
 
 @media (max-width: 1920px) {
-  @include News(140%, 87rem, 110rem, 37rem, 65%);
-}
-
-@media (max-width: 1440px) {
-  @include News(100%, 62.8rem, 90rem, 30rem, 65%);
-}
-
-@media (max-width: 1400px) {
-  @include News(100%, 62.8rem, 85rem, 30rem, 65%);
-}
-
-@media (max-width: 1367px) {
-  @include News(100%, 58rem, 90rem, 30rem, 65%);
-}
-
-@media (max-width: 1280px) {
-  @include News(100%, 55rem, 88rem, 30rem, 60%);
+  @include News(140%, 87rem, 100rem, 37rem, 65%);
   body {
     #News {
-    #NewsContent {
-      .carousel {
-        .carousel-control {
-          font-size: 2rem;
-          
+      #NewsContent {
+        .carousel-indicator {
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
     }
+  }
+}
+
+@media (max-width: 1440px) {
+  @include News(100%, 62.8rem, 80rem, 30rem, 65%);
+}
+
+@media (max-width: 1400px) {
+  @include News(100%, 59rem, 80rem, 30rem, 65%);
+}
+
+@media (max-width: 1367px) {
+  @include News(100%, 58rem, 80rem, 30rem, 65%);
+}
+
+@media (max-width: 1280px) {
+  @include News(100%, 55rem, 80rem, 30rem, 60%);
+  body {
+    #News {
+      #NewsContent {
+        .carousel {
+          .carousel-control {
+            font-size: 2rem;
+          }
+        }
+      }
     }
   }
 }
 
 @media (max-width: 1025px) {
-  @include News(75%, 45rem, 80rem, 27rem, 65%);
+  @include News(75%, 45rem, 72rem, 27rem, 65%);
 
   body {
     #News {
-    #NewsContent {
-      .carousel {
-        .carousel-control {
-          font-size: 1.5rem;
+      #NewsContent {
+        .carousel {
+          .carousel-control {
+            font-size: 1.5rem;
+          }
         }
       }
-    }
     }
   }
 }
 
 @media (max-width: 769px) {
-  @include News(80%, 44.5rem, 75rem, 26rem, 50%);
+  @include News(80%, 44.5rem, 68rem, 26rem, 50%);
   body {
     #News {
       #NewsContent {
@@ -320,7 +327,7 @@
 }
 
 @media (max-width: 425px) {
-  @include News(75%, 23rem, 115rem, auto, auto);
+  @include News(75%, 23rem, 105rem, auto, auto);
   body {
     #News {
       #NewsContent {
@@ -378,7 +385,7 @@
 }
 
 @media (max-width: 390px) {
-  @include News(70%, 22rem, 115rem, auto, auto);
+  @include News(70%, 22rem, 105rem, auto, auto);
   body {
     #News {
       #NewsContent {
@@ -393,7 +400,7 @@
 }
 
 @media (max-width: 375px) {
-  @include News(70%, 21rem, 115rem, auto, auto);
+  @include News(70%, 21rem, 106rem, auto, auto);
   body {
     #News {
       #NewsContent {
@@ -408,7 +415,7 @@
 }
 
 @media (max-width: 360px) {
-  @include News(70%, 20rem, 115rem, auto, auto);
+  @include News(70%, 20rem, 106rem, auto, auto);
   body {
     #News {
       #NewsContent {
@@ -423,7 +430,7 @@
 }
 
 @media (max-width: 320px) {
-  @include News(70%, 18rem, 115rem, auto, auto);
+  @include News(70%, 18rem, 111rem, auto, auto);
   body {
     #News {
       #NewsContent {

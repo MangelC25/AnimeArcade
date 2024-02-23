@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&display=swap");
 :root {
   --bg-navbar: $bg-navbar;
   --text-colornavbar: $text-colornavbar;
@@ -25,6 +26,17 @@ html {
 
 section {
   color: black;
+}
+
+.TitleContnt, hr {
+  margin-bottom: 2rem;
+  font-family: "Protest Guerrilla", sans-serif;
+}
+
+hr {
+  margin-top: 1rem;
+  border-radius: 40%;
+  font-weight: 700;
 }
 
 @media (max-width: 1920px) {
@@ -1677,16 +1689,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 110rem;
+    height: 100rem;
     font-family: "Poppins", sans-serif;
     font-size: 140%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -1860,21 +1871,24 @@ section {
       transform: translateX(0%);
     }
   }
+  body #News #NewsContent .carousel-indicator {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 @media (max-width: 1440px) {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 90rem;
+    height: 80rem;
     font-family: "Poppins", sans-serif;
     font-size: 100%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -2053,16 +2067,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 85rem;
+    height: 80rem;
     font-family: "Poppins", sans-serif;
     font-size: 100%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -2114,7 +2127,7 @@ section {
   }
   body #News #NewsContent .slide .Card {
     border-radius: 5%;
-    width: 62.8rem;
+    width: 59rem;
     display: flex;
     height: 30rem;
   }
@@ -2241,16 +2254,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 90rem;
+    height: 80rem;
     font-family: "Poppins", sans-serif;
     font-size: 100%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -2429,16 +2441,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 88rem;
+    height: 80rem;
     font-family: "Poppins", sans-serif;
     font-size: 100%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -2620,16 +2631,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 80rem;
+    height: 72rem;
     font-family: "Poppins", sans-serif;
     font-size: 75%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -2811,16 +2821,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 75rem;
+    height: 68rem;
     font-family: "Poppins", sans-serif;
     font-size: 80%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -3018,16 +3027,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 115rem;
+    height: 105rem;
     font-family: "Poppins", sans-serif;
     font-size: 75%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -3240,16 +3248,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 115rem;
+    height: 105rem;
     font-family: "Poppins", sans-serif;
     font-size: 70%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -3431,16 +3438,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 115rem;
+    height: 106rem;
     font-family: "Poppins", sans-serif;
     font-size: 70%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -3622,16 +3628,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 115rem;
+    height: 106rem;
     font-family: "Poppins", sans-serif;
     font-size: 70%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -3813,16 +3818,15 @@ section {
   body #News {
     padding: 5% 0;
     width: 100%;
-    height: 115rem;
+    height: 111rem;
     font-family: "Poppins", sans-serif;
     font-size: 70%;
     display: flex;
     justify-content: center;
   }
   body #News hr {
-    margin-top: 1rem;
     border-left: solid black 1px;
-    border-radius: 10%;
+    margin-bottom: 0;
   }
   body #News #NewsContent {
     padding: 1rem;
@@ -3999,4 +4003,115 @@ section {
   body #News #NewsContent .carousel .carousel-inner {
     padding: 0;
   }
+}
+body #Episodes {
+  position: relative;
+  width: 100%;
+  padding: 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+body #Episodes .custom-shape-divider-top-1708479582 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+body #Episodes .custom-shape-divider-top-1708479582 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 52px;
+}
+body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+  fill: #ffffff;
+}
+body #Episodes #Episodes-content {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 67.1rem;
+}
+body #Episodes #Episodes-content .owl-carousel {
+  padding: 2rem 0;
+  height: 28rem;
+  overflow: hidden;
+}
+body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
+body #Episodes #Episodes-content .owl-carousel .item {
+  width: 15rem;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+  background-color: dodgerblue;
+  border-radius: 32px;
+  padding: 0 0.5rem;
+  font-size: 12px;
+  margin-bottom: 0.3rem;
+}
+body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+  vertical-align: middle;
+}
+body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+  display: block;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body #Episodes #Episodes-content .owl-carousel .item img {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+body #Episodes #Episodes-content .owl-carousel .item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+}
+body #Episodes #Episodes-content .owl-carousel .item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body #Episodes #Episodes-content .owl-carousel .owl-dots {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+body #Episodes #Episodes-content .owl-carousel .owl-dots .owl-dot {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: 0 5px;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+body #Episodes #Episodes-content .owl-carousel .owl-dots .owl-dot.active {
+  background: #ffffff;
+  opacity: 1;
 }/*# sourceMappingURL=Styles.css.map */

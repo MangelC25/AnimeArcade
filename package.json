@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "jquery": "^3.7.1",
     "node-fetch": "^3.3.2",
+    "owl.carousel": "^2.3.4",
     "xml-js": "^1.6.11"
   }
 }

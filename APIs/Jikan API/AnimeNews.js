@@ -80,7 +80,7 @@ async function obtenerNoticiasAnime(animeId, slideElement) {
             fetch(Anime)
                 .then((respuesta) => {
                     if (!respuesta.ok) {
-                        throw new Error("Error al obtener las noticias del anime");
+                        throw new Error("Error al obtener el anime");
                     }
                     return respuesta.json();
                 })
@@ -89,7 +89,7 @@ async function obtenerNoticiasAnime(animeId, slideElement) {
                     await actualizarElementosHTML(slideElement, latestNews, anime);
                 })
                 .catch((error) => {
-                    console.error("Error al obtener las noticias:", error);
+                    console.error("Error al obtener informacion del anime:", error);
                 });
         })
         .catch((error) => {
@@ -99,5 +99,5 @@ async function obtenerNoticiasAnime(animeId, slideElement) {
 
 // Función principal para obtener las noticias de todos los slides
 export async function GetAnimeNes(AnimeId, slideElement) {
-  obtenerNoticiasAnime(AnimeId, slideElement);
+  await obtenerNoticiasAnime(AnimeId, slideElement);
 }

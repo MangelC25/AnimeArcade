@@ -34,5 +34,16 @@ section {
   color: $text-color;
 }
 
+.TitleContnt, hr{
+  margin-bottom: 2rem;
+  font-family: $font-style1;
+}
+
+hr{
+  margin-top: 1rem;
+  border-radius: 40%;
+  font-weight: 700;
+}
+
 
 
