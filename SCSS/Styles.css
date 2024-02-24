@@ -4042,6 +4042,9 @@ body #Episodes #Episodes-content .owl-carousel {
   height: 28rem;
   overflow: hidden;
 }
+body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+  overflow: visible;
+}
 body #Episodes #Episodes-content .owl-carousel .item {
   width: 15rem;
   margin: auto;
@@ -4094,4 +4097,8 @@ body #Episodes #Episodes-content .owl-carousel .item::before {
 }
 body #Episodes #Episodes-content .owl-carousel .item:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+body #Episodes #Episodes-content .owl-carousel .owl-dots {
+  margin-top: 2rem;
+  text-align: center;
 }/*# sourceMappingURL=Styles.css.map */

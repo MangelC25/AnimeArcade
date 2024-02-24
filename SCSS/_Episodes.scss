@@ -44,6 +44,10 @@ body {
         height: 28rem;
         overflow: hidden;
 
+        .owl-stage-outer{
+          overflow: visible;
+        }
+
         .item {
           width: 15rem;
           margin: auto;
@@ -111,6 +115,11 @@ body {
           &:hover {
             background-color: rgba(255, 255, 255, 0.2);
           }
+        }
+
+        .owl-dots {
+          margin-top: 2rem;
+          text-align: center;
         }
       }
     }
