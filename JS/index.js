@@ -30,5 +30,5 @@ document.addEventListener("DOMContentLoaded", async function () {
   await GetAnimeEpisodes(52299, CardEpisode[5]);
   await GetAnimeEpisodes(56352, CardEpisode[6]);
 
-  await Episodes(); // Llamada a Episodes al final
+  await Episodes();
 });
