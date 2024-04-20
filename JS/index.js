@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", async function () {
   setupMenu();
   NavResposive();
   ImagesHome();
-  GetMangaNes(142014, slide[0]);
-  GetAnimeNes(58059, slide[0]);
-  GetMangaNes(130317, slide[1]);
-  GetAnimeNes(51461, slide[1]);
-  GetMangaNes(148054, slide[2]);
-  GetAnimeNes(55071, slide[2]);
+  await GetMangaNes(142014, slide[0]);
+  await GetAnimeNes(58059, slide[0]);
+  await GetMangaNes(130317, slide[1]);
+  await GetAnimeNes(51461, slide[1]);
+  await GetMangaNes(148054, slide[2]);
+  await GetAnimeNes(55071, slide[2]);
   carousel();
 
   await GetAnimeEpisodes(54794, CardEpisode[0]);

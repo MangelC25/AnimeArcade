@@ -4004,101 +4004,622 @@ hr {
     padding: 0;
   }
 }
-body #Episodes {
-  position: relative;
-  width: 100%;
-  padding: 5% 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-  font-family: "Poppins", sans-serif;
-  color: white;
+@media (max-width: 1920px) {
+  body #Episodes {
+    position: relative;
+    width: 100%;
+    font-size: 140%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+    fill: #ffffff;
+  }
+  body #Episodes #Episodes-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 95rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel {
+    padding: 2rem 0;
+    height: 40rem;
+    overflow: hidden;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item {
+    width: 22rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+    background-color: dodgerblue;
+    border-radius: 32px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+    vertical-align: middle;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+  body #Episodes #Episodes-content .owl-carousel .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots .owl-dot > span {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
-body #Episodes .custom-shape-divider-top-1708479582 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+@media (max-width: 1440px) {
+  body #Episodes {
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+    fill: #ffffff;
+  }
+  body #Episodes #Episodes-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 71rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel {
+    padding: 2rem 0;
+    height: 28rem;
+    overflow: hidden;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item {
+    width: 17rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+    background-color: dodgerblue;
+    border-radius: 32px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+    vertical-align: middle;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+  body #Episodes #Episodes-content .owl-carousel .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots .owl-dot > span {
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
 }
-body #Episodes .custom-shape-divider-top-1708479582 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 52px;
+@media (max-width: 1400px) {
+  body #Episodes {
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+    fill: #ffffff;
+  }
+  body #Episodes #Episodes-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 67rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel {
+    padding: 2rem 0;
+    height: 28rem;
+    overflow: hidden;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item {
+    width: 15rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+    background-color: dodgerblue;
+    border-radius: 32px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+    vertical-align: middle;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+  body #Episodes #Episodes-content .owl-carousel .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
-body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
-  fill: #ffffff;
+@media (max-width: 1367px) {
+  body #Episodes {
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+    fill: #ffffff;
+  }
+  body #Episodes #Episodes-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 67rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel {
+    padding: 2rem 0;
+    height: 28rem;
+    overflow: hidden;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item {
+    width: 15rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+    background-color: dodgerblue;
+    border-radius: 32px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+    vertical-align: middle;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+  body #Episodes #Episodes-content .owl-carousel .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
-body #Episodes #Episodes-content {
-  margin-top: 3rem;
-  padding: 1rem;
-  width: 67.1rem;
+@media (max-width: 1280px) {
+  body #Episodes {
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+    fill: #ffffff;
+  }
+  body #Episodes #Episodes-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 63rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel {
+    padding: 2rem 0;
+    height: 28rem;
+    overflow: hidden;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item {
+    width: 15rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+    background-color: dodgerblue;
+    border-radius: 32px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+    vertical-align: middle;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+  body #Episodes #Episodes-content .owl-carousel .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+  }
 }
-body #Episodes #Episodes-content .owl-carousel {
-  padding: 2rem 0;
-  height: 28rem;
-  overflow: hidden;
-}
-body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
-  overflow: visible;
-}
-body #Episodes #Episodes-content .owl-carousel .item {
-  width: 15rem;
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
-  border-radius: 20px;
-  transition: all 0.3s ease-in-out;
-}
-body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
-  width: 100%;
-  padding: 1rem;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
-  background-color: dodgerblue;
-  border-radius: 32px;
-  padding: 0 0.5rem;
-  font-size: 12px;
-  margin-bottom: 0.3rem;
-}
-body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
-  vertical-align: middle;
-}
-body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
-  display: block;
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-body #Episodes #Episodes-content .owl-carousel .item img {
-  display: block;
-  position: relative;
-  width: 100%;
-  z-index: -1;
-  transition: all 0.3s ease-in-out;
-}
-body #Episodes #Episodes-content .owl-carousel .item::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
-}
-body #Episodes #Episodes-content .owl-carousel .item:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-body #Episodes #Episodes-content .owl-carousel .owl-dots {
-  margin-top: 2rem;
-  text-align: center;
+@media (max-width: 1025px) {
+  body #Episodes {
+    position: relative;
+    width: 100%;
+    font-size: 75%;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+  }
+  body #Episodes .custom-shape-divider-top-1708479582 svg .shape-fill {
+    fill: #ffffff;
+  }
+  body #Episodes #Episodes-content {
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 50rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel {
+    padding: 2rem 0;
+    height: 28rem;
+    overflow: hidden;
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-stage-outer {
+    overflow: visible;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item {
+    width: 15rem;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.4) -5px 5px, rgba(255, 255, 255, 0.3) -10px 10px, rgba(255, 255, 255, 0.2) -15px 15px, rgba(255, 255, 255, 0.1) -20px 20px, rgba(255, 255, 255, 0.05) -25px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep {
+    background-color: dodgerblue;
+    border-radius: 32px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer .Ep i {
+    vertical-align: middle;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer #TitleA {
+    display: block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+  }
+  body #Episodes #Episodes-content .owl-carousel .item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  body #Episodes #Episodes-content .owl-carousel .owl-dots {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  body #Episodes #Episodes-content .owl-carousel .item .InfoContainer {
+    font-size: 120%;
+  }
 }/*# sourceMappingURL=Styles.css.map */

@@ -66,7 +66,7 @@ function actualizarElementosHTML(slideElement, latestNews, manga) {
 }
 
 // Función para obtener las noticias de un manga
-function obtenerNoticiasManga(mangaId, slideElement) {
+async function obtenerNoticiasManga(mangaId, slideElement) {
   const news = `${Url}/manga/${mangaId}/news`;
   const Manga = `${Url}/manga/${mangaId}`;
 
@@ -101,6 +101,6 @@ function obtenerNoticiasManga(mangaId, slideElement) {
 }
 
 // Función principal para obtener las noticias de un manga y actualizar el slide correspondiente
-export function GetMangaNes(MangaId, slideElement) {
-  obtenerNoticiasManga(MangaId, slideElement);
+export async function GetMangaNes(MangaId, slideElement) {
+  await obtenerNoticiasManga(MangaId, slideElement);
 }
